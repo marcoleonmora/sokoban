@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Sokoban</title>
+	<link rel="stylesheet" href="soko.css">
+	<script src = "soko.js"></script>
+</head>
+<body>
+	<div id="contenedor1">
+		<h1 id="titulo">SOKOBAN</h1>
+		<canvas id="canvas"  width= 450 height=450>Canvas no soportado</canvas>
+        <div>
+		  <h3 id="pasosSoko">Pasos Soko:</h3>
+		  <h3 id="pasosCaja">Movimientos:</h3>
+          <h3 id="buscar">Buscar:</h3>
+        </div>
+		
+		<div class="botonera">
+			
+				<input type="file" id="archivo"  class="botones"  class="input-file"/>
+			
+			
+			<div class="botones"><a onclick="mundoAnterior()">anterior</a ></div>
+			<div class="botones"><a onclick="mundoSiguiente()">siguiente</a></div>
+			<input type="text" id="txtMundo"  name="Mundo" value="1" keydown", onkeydown="detectarTecla()">
+
+		</div>
+
+    </div>
+	<!-- Archivos de audio para animar movimientos-->
+    <div id="sonidos">
+    	<audio id="audioPaso">
+    		<source src="Recursos/paso1.ogg" type="audio/ogg"></source>
+    		<source src="Recursos/paso1.mp3" type="audio/mpeg"></source>
+    	</audio>
+    	<audio id="audioCaja">
+    		<source src="Recursos/Caja.ogg" type="audio/ogg"></source>
+    		<source src="Recursos/Caja.mp3" type="audio/mpeg"></source>
+    	</audio>
+    	<audio id="audioNoMueve">
+    		<source src="Recursos/nomueve.ogg" type="audio/ogg"></source>
+    		<source src="Recursos/nomueve.mp3" type="audio/mpeg"></source>
+    	</audio>
+    	<audio id="audioAplausos">
+    		<source src="Recursos/aplausos.ogg" type="audio/ogg"></source>
+    		<source src="Recursos/aplausos.mp3" type="audio/mpeg"></source>
+    	</audio>
+    </div>
+</body>
+</html>

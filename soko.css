@@ -1,0 +1,92 @@
+/*Formato de elementos del juego SOKOBAN*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenedor1{
+	background-color: #D38BFE;
+	height: 550px;
+	margin: auto;    
+	padding: 5px;
+	width: 550px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);    
+}
+
+h1{
+	font-size: 2em;
+	text-align: center;
+}
+
+canvas{
+	border: solid 2px #00c;
+	margin-left: 8%;
+}
+
+#contenedor1 h3{
+	display: inline-block;
+	margin-left: 8%;
+}
+
+#sonidos{
+	display: none;
+    flex: 1;
+}
+
+/***** Botones de archivo y de selectores de nivel ****/
+.botonera{
+    display: flex;
+    margin-left: 6%;
+}
+
+.botones {
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: #4f6f6f;
+    width: 20%;
+    padding: 5px;
+    color: white;
+    float: left;
+}
+
+#buscar{
+   float: right; 
+   margin-right: 45px;
+}
+
+#txtMundo {
+    width: 40px;
+    /*height: 20px;*/
+    padding: 5px;
+    font-size: 1 em;
+    margin-left: 8%;
+}
+
+.botones a{
+	text-decoration: none;
+	font-size: 1.1em;
+	color: white;
+	margin: auto;
+}
+
+.botones .input-file {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    right: -100px;
+    top: 0px;
+    cursor: pointer;
+}
